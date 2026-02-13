@@ -5,21 +5,21 @@
 class Repomedic < Formula
   desc "The Governance Auditor for GitHub Fleets"
   homepage "https://github.com/repomedic/repomedic"
-  version "1.0.2"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/repomedic/repomedic/releases/download/v1.0.2/repomedic_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "daab0009ddd9c85a7010ac147b7e9e4112ecaf369cf3750a1d70cbc875663470"
+      url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "b3d677bf41a7aaa4c1ef2ee17694846cb30982513e33cae05eb541964fb66669"
 
       def install
         bin.install "repomedic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/repomedic/repomedic/releases/download/v1.0.2/repomedic_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "0a8935f16b51e75998095942e29360d60ed1cb133e313388dc64c83d2aeff2c5"
+      url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "b9be8795b42ac9e3750412f76af897c53d2b84c5066d5b4979b94806cf7ab387"
 
       def install
         bin.install "repomedic"
@@ -29,15 +29,15 @@ class Repomedic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/repomedic/repomedic/releases/download/v1.0.2/repomedic_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "27e770f09576815253ded7162289fc4d6797eddf7527a06af880808e34f738e8"
+      url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "eccd85c0ae3c97ef4c822a4adcc7c6619cf7e5a5102edc16ea06798327829a05"
       def install
         bin.install "repomedic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/repomedic/repomedic/releases/download/v1.0.2/repomedic_1.0.2_Linux_arm64.tar.gz"
-      sha256 "590963a97d57b3c0512aa14ab93a3a0035add5fbf36f7fb91aad320bf545176e"
+      url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Linux_arm64.tar.gz"
+      sha256 "27cdec8c1a4dab794b01bd284a23428af714971ce2987210dadc60ce5462e7ee"
       def install
         bin.install "repomedic"
       end

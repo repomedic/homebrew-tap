@@ -11,7 +11,7 @@ class Repomedic < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Darwin_x86_64.tar.gz"
-      sha256 "14964a4ec50a537a7e68da1aac68a2e59098da9706aa06c6f25ca717146f72bf"
+      sha256 "99fc02df1f980c6c15347f16f3014e603978d4b246436a74fc696b7067e363f8"
 
       def install
         bin.install "repomedic"
@@ -19,7 +19,7 @@ class Repomedic < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Darwin_arm64.tar.gz"
-      sha256 "e8d1194e31290e4343b5783e96170977006696d34f3da14be45ac66dafcba70e"
+      sha256 "fe506cf5d73cbfdc657818fee5bb1031ad17deb18277cfcb0436df116f2808a9"
 
       def install
         bin.install "repomedic"
@@ -30,14 +30,14 @@ class Repomedic < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Linux_x86_64.tar.gz"
-      sha256 "ad7870fe126423f0bddeef0284574c05d83de6fe01be56ed39367ebad13edd33"
+      sha256 "c2eb057e208f51764dfc5ce304e1263ed3b359ca590dd19b428cc6b8bf7b0c81"
       def install
         bin.install "repomedic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/repomedic/repomedic/releases/download/v1.1.0/repomedic_1.1.0_Linux_arm64.tar.gz"
-      sha256 "b6795554f8e84b352694006bee7406fffab0d31a623f9146afcdcededcfd0721"
+      sha256 "41c6c440d34ac09aeaf68c1d5097c797c54263d59ac7ece8afac1c180af28d04"
       def install
         bin.install "repomedic"
       end
